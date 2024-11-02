@@ -226,8 +226,6 @@ header .customCheckBoxHolder .customCheckBoxWrapper .customCheckBox:hover {
 }
 header .customCheckBoxHolder .customCheckBoxWrapper .customCheckBox img {
   margin-right: 5px;
-  transition: transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
-  transform: translateY(0px);
 }
 header .customCheckBoxHolder .customCheckBoxWrapper .customCheckBox .inner {
   font-size: 1.5rem;
@@ -385,9 +383,10 @@ header a img {
   margin-bottom: 15rem;
 }
 .projects .project-card .card {
-  max-width: 25rem;
-  height: 40rem;
+  width: 55rem;
+  height: 60vh;
   border-radius: 1.5rem;
+  background-color: #2d2d2d;
   filter: drop-shadow(0px 4px 4px #020202);
 }
 .projects .project-card .card img {
@@ -400,12 +399,10 @@ header a img {
   flex-direction: column;
   justify-content: space-between;
   align-items: left;
-  margin-left: 2.6rem;
+  margin: 2.6rem;
 }
 .projects .project-card .project-info .video-wrapper {
   width: 100%;
-  max-width: 31rem;
-  height: 18rem;
 }
 .projects .project-card .project-info .video-wrapper img {
   width: 100%;
@@ -421,30 +418,63 @@ header a img {
   font-size: 2rem;
   font-weight: bold;
 }
-.projects .project-card .project-info .info .techs {
+.projects .project-card .project-info .info .techs-right {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
-.projects .project-card .project-info .info .techs h4 {
+.projects .project-card .project-info .info .techs-right h4 {
   margin-top: 1.5rem;
   font-size: 1.5rem;
   color: var(--text-color4);
   text-transform: uppercase;
   margin-right: 1rem;
 }
-.projects .project-card .project-info .info .techs i {
+.projects .project-card .project-info .info .techs-right h5 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color4);
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+.projects .project-card .project-info .info .techs-right i {
   font-size: 4rem;
   color: var(--text-color4);
 }
-.projects .project-card .project-info .info .techs i:not(:last-child) {
+.projects .project-card .project-info .info .techs-right i:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.projects .project-card .project-info .info .techs-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.projects .project-card .project-info .info .techs-left h4 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color4);
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+.projects .project-card .project-info .info .techs-left h5 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--text-color4);
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+.projects .project-card .project-info .info .techs-left i {
+  font-size: 4rem;
+  color: var(--text-color4);
+}
+.projects .project-card .project-info .info .techs-left i:not(:last-child) {
   margin-right: 1.5rem;
 }
 .projects .project-card .project-info .info p {
   margin-top: 1rem;
   color: var(--text-color2);
   font-size: 1.7rem;
-  max-width: 42rem;
+  max-width: 44rem;
 }
 .projects .project-card .project-info .buttons {
   margin-top: 3rem;
@@ -487,16 +517,11 @@ header a img {
   flex-direction: row-reverse;
 }
 .projects .side .project-info {
-  margin-left: 0;
-  margin-right: 2.6rem;
+  margin: 2.6rem;
   align-items: flex-end;
 }
 .projects .side .project-info .info {
   text-align: right;
-}
-.projects .side .project-info .techs {
-  margin-top: 2rem;
-  margin-left: 10rem;
 }
 
 .contact {
