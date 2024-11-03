@@ -191,63 +191,72 @@ header ul a:hover {
   color: var(--hover-color);
 }
 header #languageOptions {
-  position: fixed;
-  right: 5%;
+    position: fixed;
+    right: 5%;
 }
-header .customCheckBoxHolder {
-  margin: 5px;
-  display: flex;
-  gap: 3rem;
+
+header .customRadioHolder {
+    margin: 5px;
+    display: flex;
+    gap: 3rem;
 }
-header .customCheckBoxHolder .customCheckBoxWrapper {
-  position: relative;
+
+header .customRadioHolder .customRadioWrapper {
+    position: relative;
 }
-header .customCheckBoxHolder .customCheckBoxWrapper .customCheckBox {
-  width: fit-content;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-  border-radius: 8px;
-  padding: 20px 20px;
-  background-color: rgba(0, 0, 0, 0.16);
-  color: rgba(255, 255, 255, 0.7);
-  transition: color 300ms cubic-bezier(0.25, 0.8, 0.25, 1), background-color 300ms cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
-  display: flex;
-  height: 32px;
-  align-items: center;
-  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 1px 0px inset, rgba(255, 255, 255, 0.17) 0px 1px 1px 0px; */
-  outline: none;
-  justify-content: center;
-  min-width: 55px;
+
+header .customRadioHolder .customRadio {
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.16);
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 300ms cubic-bezier(0.25, 0.8, 0.25, 1),
+                background-color 300ms cubic-bezier(0.25, 0.8, 0.25, 1),
+                box-shadow 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    height: 32px;
+    align-items: center;
+    outline: none;
+    justify-content: center;
+    min-width: 55px;
 }
-header .customCheckBoxHolder .customCheckBoxWrapper .customCheckBox:hover {
-  background-color: #2c2c2c;
-  color: white;
+
+header .customRadioHolder .customRadio:hover {
+    background-color: #2c2c2c;
+    color: white;
 }
-header .customCheckBoxHolder .customCheckBoxWrapper .customCheckBox img {
-  margin-right: 5px;
+
+header .customRadioHolder .customRadio img {
+    margin-right: 5px;
 }
-header .customCheckBoxHolder .customCheckBoxWrapper .customCheckBox .inner {
-  font-size: 1.5rem;
-  font-weight: 900;
-  pointer-events: none;
-  transition: transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
-  transform: translateY(0px);
+
+header .customRadioHolder .customRadio .inner {
+    font-size: 1.5rem;
+    font-weight: 900;
+    pointer-events: none;
+    transition: transform 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translateY(0px);
 }
-header .customCheckBoxHolder .customCheckBoxInput {
-  display: none;
+
+/* Esconde os radio buttons originais */
+header .customRadioHolder .customRadioInput {
+    display: none;
 }
-header .customCheckBoxHolder .customCheckBoxInput:checked ~ .customCheckBoxWrapper .customCheckBox {
-  background-color: rgba(0, 0, 0, 0.16);
-  color: rgba(255, 255, 255, 0.7);
+
+/* Estilo para o radio button selecionado */
+header .customRadioHolder .customRadioInput:checked + .customRadioWrapper .customRadio {
+    background-color: #2d6737;
+    color: white;
 }
-header .customCheckBoxHolder .customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox {
-  background-color: #2d6737;
-  color: white;
+
+header .customRadioHolder .customRadioInput:checked + .customRadioWrapper .customRadio .inner {
+    transform: translateY(-2px);
 }
-header .customCheckBoxHolder .customCheckBoxInput:checked + .customCheckBoxWrapper .customCheckBox .inner {
-  transform: translateY(-2px);
-}
+
 header a img {
   width: 4rem;
   display: none;

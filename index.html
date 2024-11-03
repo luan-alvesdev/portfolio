@@ -26,32 +26,32 @@
             <a href="https://github.com/luan-alvesdev" target="_blank"><li>Github</li></a>    
         </ul>
         <div id="languageOptions">
-            <div class="customCheckBoxHolder" >
-                <input class="customCheckBoxInput" id="cCB1" type="checkbox">
-                <label class="customCheckBoxWrapper" for="cCB1" onclick="mudarIdioma('PTBR')">
-                    <div class="customCheckBox">
+            <div class="customRadioHolder">
+                <input class="customRadioInput" id="cCB1" type="radio" name="language" checked>
+                <label class="customRadioWrapper" for="cCB1" onclick="mudarIdioma('PTBR')">
+                    <div class="customRadio">
                         <img src="./imgs/br.svg" alt="">
                         <div class="inner">PT</div>
                     </div>
                 </label>
-    
-                <input class="customCheckBoxInput" id="cCB2" type="checkbox">
-                <label class="customCheckBoxWrapper" for="cCB2" onclick="mudarIdioma('ENG')">
-                    <div class="customCheckBox">
+        
+                <input class="customRadioInput" id="cCB2" type="radio" name="language">
+                <label class="customRadioWrapper" for="cCB2" onclick="mudarIdioma('ENG')">
+                    <div class="customRadio">
                         <img src="./imgs/us.svg" alt="">
-                        <div class="inner" data-id="menu_idioma_ing"></div>
+                        <div class="inner">ENG</div>
                     </div>
                 </label>
-    
-                <input class="customCheckBoxInput" id="cCB3" type="checkbox">
-                <label class="customCheckBoxWrapper" for="cCB3" onclick="mudarIdioma('ESP')">
-                    <div class="customCheckBox">
+        
+                <input class="customRadioInput" id="cCB3" type="radio" name="language">
+                <label class="customRadioWrapper" for="cCB3" onclick="mudarIdioma('ESP')">
+                    <div class="customRadio">
                         <img src="./imgs/es.svg" alt="">
                         <div class="inner">ESP</div>
                     </div>
                 </label>
             </div>
-        </div>
+        </div>        
         <a href="" class="btn-sidebar js-btn-sidebar"><img src="imgs/sidebar-logo.png"alt=""></a>
     </header>
 
@@ -150,7 +150,7 @@
                         <div class="info">
                             <h3>CardSage</h3>
                             <div class="techs techs-left">
-                                <h4 id="projetos_tecnologias"></h4>
+                                <h4 data-id="projetos_tecnologias"></h4>
                                 <h4 style="color: white">React - Yup - Material UI</h4>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus hic molestiae ad, assumenda explicabo numquam corporis repellat et consectetur esse vero laborum nemo. Distinctio velit voluptas maiores vero asperiores sed!</p>
@@ -173,7 +173,7 @@
                         <div class="info">
                             <h3>WaveCast</h3>
                             <div class="techs techs-right">
-                                <h5 id="projetos_tecnologias"></h5>
+                                <h5 data-id="projetos_tecnologias"></h5>
                                 <h5 style="color: white">JavaScript - Bootstrap - CSS</h5>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus hic molestiae ad, assumenda explicabo numquam corporis repellat et consectetur esse vero laborum nemo. Distinctio velit voluptas maiores vero asperiores sed!</p>
