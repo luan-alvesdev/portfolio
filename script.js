@@ -45,7 +45,7 @@ window.addEventListener('scroll', function() {
 });
 
 // Fecha o menu responsivo ao clicar em um item do menu
-const menuItems = document.querySelectorAll('.navbar-collapse ul li a');
+const menuItems = document.querySelectorAll('.navbar-collapse-menu');
 const navbarToggle = document.querySelector('.navbar-toggle');
 
 menuItems.forEach(item => {

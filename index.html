@@ -49,18 +49,32 @@
           <!-- Links de navegação -->
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">Home</a></li>
-              <li><a href="#projects">Projetos</a></li>
-              <li><a href="#contact">Contato</a></li>
+              <li><a href="#about" class="navbar-collapse-menu">Home</a></li>
               <li>
-                <a href="https://www.linkedin.com/in/luanalvesdev/">LinkedIn</a>
+                <a href="#projects" class="navbar-collapse-menu">Projetos</a>
               </li>
-              <li><a href="https://github.com/luan-alvesdev">GitHub</a></li>
+              <li>
+                <a href="#contact" class="navbar-collapse-menu">Contato</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/luanalvesdev/"
+                  class="navbar-collapse-menu"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/luan-alvesdev"
+                  class="navbar-collapse-menu"
+                  >GitHub</a
+                >
+              </li>
               <li>
                 <div id="languageOptions">
                   <div class="customRadioHolder">
                     <input
-                      class="customRadioInput"
+                      class="customRadioInput navbar-collapse-menu"
                       id="cCB1"
                       type="radio"
                       name="language"
@@ -78,7 +92,7 @@
                     </label>
 
                     <input
-                      class="customRadioInput"
+                      class="customRadioInput navbar-collapse-menu"
                       id="cCB2"
                       type="radio"
                       name="language"
@@ -95,7 +109,7 @@
                     </label>
 
                     <input
-                      class="customRadioInput"
+                      class="customRadioInput navbar-collapse-menu"
                       id="cCB3"
                       type="radio"
                       name="language"
@@ -189,7 +203,7 @@
               <div class="info">
                 <h3>Aquarium</h3>
                 <div class="techs techs-left">
-                  <h4 data-id="projetos_tecnologias"></h4>
+                  <h4 data-id="projetos_titulo"></h4>
                   <h4>Vue - TypeScript - CSS Animations</h4>
                 </div>
                 <p data-id="projetos_sobre_1"></p>
@@ -215,24 +229,25 @@
           <div class="card" data-aos="flip-left">
             <div class="project-info" data-aos="fade-up" data-aos-delay="200">
               <div class="video-wrapper">
-                <img src="imgs/gifs/serenatto.gif" alt="" />
+                <img src="imgs/gifs/wavecast.gif" alt="" />
               </div>
               <div class="info">
-                <h3>Serenatto</h3>
+                <h3>WaveCast</h3>
                 <div class="techs techs-right">
-                  <h5 data-id="projetos_tecnologias"></h5>
+                  <h5 data-id="projetos_titulo"></h5>
                   <h5>JavaScript - Bootstrap - CSS</h5>
                 </div>
-                <p data-id="projetos_sobre_2"></p>
+                <p data-id="projetos_sobre_2">
+                </p>
               </div>
               <div class="buttons">
                 <a
-                  href="https://memini-next.vercel.app/"
+                  href="https://wavecast.luancode.dev/"
                   target="_blank"
                   data-id="projetos_site"
                 ></a>
                 <a
-                  href="https://github.com/wpcavalcante/memini-next"
+                  href="https://github.com/luan-alvesdev/WaveCast/tree/projeto-final"
                   class="btn2"
                   target="_blank"
                   data-id="projetos_codigo"
@@ -252,14 +267,10 @@
               <div class="info">
                 <h3>CardSage</h3>
                 <div class="techs techs-left">
-                  <h4 data-id="projetos_tecnologias"></h4>
+                  <h4 data-id="projetos_titulo"></h4>
                   <h4>React - Yup - Material UI</h4>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Minus hic molestiae ad, assumenda explicabo numquam corporis
-                  repellat et consectetur esse vero laborum nemo. Distinctio
-                  velit voluptas maiores vero asperiores sed!
+                <p data-id="projetos_sobre_3">
                 </p>
               </div>
               <div class="buttons">
@@ -280,33 +291,29 @@
         </div>
 
         <!-- ---------------------------------------- CARD DE PROJETO 04 ---------------------------------------- -->
+
         <div class="project-card side">
           <div class="card" data-aos="flip-left">
             <div class="project-info" data-aos="fade-up" data-aos-delay="200">
               <div class="video-wrapper">
-                <img src="imgs/gifs/wavecast.gif" alt="" />
+                <img src="imgs/gifs/serenatto.gif" alt="" />
               </div>
               <div class="info">
-                <h3>WaveCast</h3>
+                <h3>Serenatto</h3>
                 <div class="techs techs-right">
-                  <h5 data-id="projetos_tecnologias"></h5>
-                  <h5>JavaScript - Bootstrap - CSS</h5>
+                  <h5 data-id="projetos_titulo"></h5>
+                  <h5 class="projetos_titulo_tecnologias">JavaScript - Bootstrap - CSS</h5>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Minus hic molestiae ad, assumenda explicabo numquam corporis
-                  repellat et consectetur esse vero laborum nemo. Distinctio
-                  velit voluptas maiores vero asperiores sed!
-                </p>
+                <p data-id="projetos_sobre_4"></p>
               </div>
               <div class="buttons">
                 <a
-                  href="https://wavecast.luancode.dev/"
+                  href="https://serenatto.luancode.dev/"
                   target="_blank"
                   data-id="projetos_site"
                 ></a>
                 <a
-                  href="https://github.com/wpcavalcante/memini-next"
+                  href="https://github.com/luan-alvesdev/serenatto"
                   class="btn2"
                   target="_blank"
                   data-id="projetos_codigo"
