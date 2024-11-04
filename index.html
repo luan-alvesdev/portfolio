@@ -10,61 +10,69 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./main.css">
     <script src="./assets/lingo.config.js"></script>
     <script src="./assets/lingo.js"></script>
     <title>Luan Alves - Portfólio</title>
 </head>
 <body>
-    <header class="top">
-        <ul class="navbar">
-            <a href="#top"><li>Home</li></a>
-            <a href="#about"><li data-id="menu_sobre"></li></a>  
-            <a href="#projects"><li data-id="menu_projetos"></li></a>
-            <a href="#contact"><li data-id="menu_contato"></li></a>
-            <a href="https://www.linkedin.com/in/luanalvesdev/" target="_blank"><li>LinkedIn</li></a>
-            <a href="https://github.com/luan-alvesdev" target="_blank"><li>Github</li></a>    
+    <header>
+        <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Botão de alternância e logotipo -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#page-top">Portfólio Luan Alves</a>
+      </div>
+  
+      <!-- Links de navegação -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">Home</a></li>
+          <li><a href="#portfolio">Sobre</a></li>
+          <li><a href="#about">Projetos</a></li>
+          <li><a href="#team">Contato</a></li>
+          <li><a href="https://www.linkedin.com/in/luanalvesdev/">LinkedIn</a></li>
+          <li><a href="https://github.com/luan-alvesdev">GitHub</a></li>
         </ul>
-        <div id="languageOptions">
-            <div class="customRadioHolder">
-                <input class="customRadioInput" id="cCB1" type="radio" name="language" checked>
-                <label class="customRadioWrapper" for="cCB1" onclick="mudarIdioma('PTBR')">
-                    <div class="customRadio">
-                        <img src="./imgs/br.svg" alt="">
-                        <div class="inner">PT</div>
-                    </div>
-                </label>
-        
-                <input class="customRadioInput" id="cCB2" type="radio" name="language">
-                <label class="customRadioWrapper" for="cCB2" onclick="mudarIdioma('ENG')">
-                    <div class="customRadio">
-                        <img src="./imgs/us.svg" alt="">
-                        <div class="inner">ENG</div>
-                    </div>
-                </label>
-        
-                <input class="customRadioInput" id="cCB3" type="radio" name="language">
-                <label class="customRadioWrapper" for="cCB3" onclick="mudarIdioma('ESP')">
-                    <div class="customRadio">
-                        <img src="./imgs/es.svg" alt="">
-                        <div class="inner">ESP</div>
-                    </div>
-                </label>
-            </div>
-        </div>        
-        <a href="" class="btn-sidebar js-btn-sidebar"><img src="imgs/sidebar-logo.png"alt=""></a>
-    </header>
+      </div>
 
-    <div class="mobile-menu js-mobile-menu">
-        <ul class="mobile-nav">
-            <a href="#top"><li>Home</li></a>
-            <a href="#about"><li data-id="menu_sobre"></li></a>
-            <a href="#projects"><li data-id="menu_projetos"></li></a>
-            <a href="#contact"><li data-id="menu_contato"></li></a>
-            <a href="https://www.linkedin.com/in/luanalvesdev/" target="_blank"><li>LinkedIn</li></a>
-            <a href="https://github.com/luan-alvesdev" target="_blank"><li>Github</li></a>    
-        </ul>
+      <div id="languageOptions">
+        <div class="customRadioHolder">
+            <input class="customRadioInput" id="cCB1" type="radio" name="language" checked>
+            <label class="customRadioWrapper" for="cCB1" onclick="mudarIdioma('PTBR')">
+                <div class="customRadio">
+                    <img src="./imgs/br.svg" alt="">
+                    <div class="inner">PT</div>
+                </div>
+            </label>
+    
+            <input class="customRadioInput" id="cCB2" type="radio" name="language">
+            <label class="customRadioWrapper" for="cCB2" onclick="mudarIdioma('ENG')">
+                <div class="customRadio">
+                    <img src="./imgs/us.svg" alt="">
+                    <div class="inner">ENG</div>
+                </div>
+            </label>
+    
+            <input class="customRadioInput" id="cCB3" type="radio" name="language">
+            <label class="customRadioWrapper" for="cCB3" onclick="mudarIdioma('ESP')">
+                <div class="customRadio">
+                    <img src="./imgs/es.svg" alt="">
+                    <div class="inner">ESP</div>
+                </div>
+            </label>
+        </div>
+    </div>        
     </div>
+  </nav>
+    </header>
 
     <section class="home-area" id="about">
         <div class="container">
@@ -208,7 +216,9 @@
     </footer>
     
 
-    
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -1,50 +1,61 @@
 //Loader
 document.addEventListener('DOMContentLoaded', () =>{
-    const tl = gsap.timeline()
+    const links = document.querySelectorAll('a.page-scroll');
+    
+    links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
 
-    // tl.fromTo('.loader', 1,
-    // { width: '100%'},
-    // {width: '0%', 
-    // delay:3.5,
-    // ease: Expo.easeInOut})
-
-    .fromTo('.navbar', 1,
-    {y: 50, opacity:0},
-    {y: 0, opacity: 1,ease: Expo.ease}, '-=0.5')
-
-    .fromTo('.info-title', 1.5,
-    {x: -50, opacity:0},
-    {x: 0, opacity: 1,ease: Expo.ease}, '-=0.5')
-
-    .fromTo('.about-logo', 1.5,
-    {x: 50, opacity:0},
-    {x: 0, opacity: 1,ease: Expo.ease}, '-=1.5')
-
-    .fromTo('.info-p', 1.5,
-    {x: 100, opacity:0},
-    {x: 0, opacity: 1,ease: Expo.ease}, '-=0.5')
-
-    .fromTo('.project-text', 1.5,
-    {x: 50, opacity:0},
-    {x: 0, opacity: 1,ease: Expo.ease}, '-=01')
-
-    .fromTo('.slidebar', 1.5,
-    {display:"none"},
-    {display:"flex", ease: Expo.ease}, '-=1.5')
-
-    .fromTo('.projects', 1.5,
-    {display:"none"},
-    {display:"flex", ease: Expo.ease}, '-=1.5')
-
-    .fromTo('.contact', 1.5,
-    {display:"none"},
-    {display:"block", ease: Expo.ease}, '-=1.5')
-
-    .fromTo('footer', 1.5,
-    {display:"none"},
-    {display:"block", ease: Expo.ease}, '-=1.5')
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth' // Rolagem suave
+                });
+            }
+        });
+    });
     
 })
+
+// ---------------------- Animacao Menu ----------------------
+// Função de destaque do menu ao rolar a página
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar-fixed-top a');
+
+    let currentSectionId = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 50; // Ajuste de margem se necessário
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSectionId = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+            link.classList.add('active');
+        }
+    });
+});
+
+// Fecha o menu responsivo ao clicar em um item do menu
+const menuItems = document.querySelectorAll('.navbar-collapse ul li a');
+const navbarToggle = document.querySelector('.navbar-toggle');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', function() {
+        if (navbarToggle && window.getComputedStyle(navbarToggle).display !== 'none') {
+            navbarToggle.click();
+        }
+    });
+});
+
 
 //Scroll
 const btnScroll = document.querySelector('.btn-scroll')
@@ -68,6 +79,8 @@ btnMobile.addEventListener("click", (event) =>{
 
     mobileMenu.classList.toggle("show")
 })
+
+// ---------------------- FIM Animacao Menu ----------------------
 
 function mudarIdioma(idioma) {
     initInternacionalizacao(idioma);
