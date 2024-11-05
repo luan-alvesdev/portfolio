@@ -8,7 +8,7 @@ var idiomas = [
       menu_idioma_ing: "ING",
       //home
       home_descricao:
-        "Boas-vindas ao meu portfólio! Sou Luan, desenvolvedor Front-End. Aqui, você encontrará informações sobre meus projetos profissionais e pessoais, que demonstram minhas habilidades, além de formas de contato. Fique à vontade para explorar!",
+        "Boas-vindas ao meu portfólio! Sou Luan, desenvolvedor Front-End. Aqui, você encontrará meus projetos pessoais e profissionais, incluindo aqueles desenvolvidos para cursos onde atuei como instrutor. Fique à vontade para explorar e conhecer mais sobre meu trabalho!",
       home_cv: "Baixar CV",
       projetos_titulo: "Projetos",
       // projetos card
@@ -38,7 +38,7 @@ var idiomas = [
       menu_idioma_ing: "ENG",
       //home
       home_descricao:
-        "Welcome to my portfolio! I’m Luan, a Front-End Developer. Here, you’ll find information about my professional and personal projects that showcase my skills, as well as ways to contact me. Feel free to explore!",
+        "Welcome to my portfolio! I'm Luan, a Front-End Developer. Here, you'll find my personal and professional projects, including those created for courses where I worked as an instructor. Feel free to explore and learn more about my work!",
       home_cv: "Download CV",
       projetos_titulo: "Projects",
       // projetos card
@@ -52,7 +52,8 @@ var idiomas = [
       projetos_sobre_2:
         "Page about a media player, developed for the Grid Layout course taught by me at Alura. Responsive project.",
       //projetos card 3
-      projetos_sobre_3: "CardSage is an amazing Chrome extension that you can use! It allows you to add web pages to a list of personalized cards, functioning as an enhanced favorites list. Each card displays a summary, title, and tags of the main content of the page, generated with ChatGPT AI, making it easier to organize and efficiently access favorites. Currently, the extension is available only in Portuguese.",
+      projetos_sobre_3:
+        "CardSage is an amazing Chrome extension that you can use! It allows you to add web pages to a list of personalized cards, functioning as an enhanced favorites list. Each card displays a summary, title, and tags of the main content of the page, generated with ChatGPT AI, making it easier to organize and efficiently access favorites. Currently, the extension is available only in Portuguese.",
       //projetos card 4
       projetos_sobre_4:
         "Coffee shop web page developed for the creation of a course where I was an instructor on Bootstrap 5, JavaScript, and visual effects with CSS at Alura. Code developed by me, design created by the responsible team.",
@@ -67,7 +68,7 @@ var idiomas = [
       menu_idioma_ing: "ING",
       //home
       home_descricao:
-        "¡Bienvenidos a mi portafolio! Soy Luan, desarrollador Front-End. Aquí encontrarás información sobre mis proyectos profesionales y personales, que demuestran mis habilidades, además de formas de contacto. ¡Siéntete libre de explorar!",
+        "¡Bienvenidos a mi portafolio! Soy Luan, desarrollador Front-End. Aquí encontrarás mis proyectos personales y profesionales, incluyendo aquellos creados para cursos donde trabajé como instructor. ¡Siéntete libre de explorar y conocer más sobre mi trabajo!",
       home_cv: "Descargar CV",
       projetos_titulo: "Proyectos",
       // projetos card
@@ -81,7 +82,8 @@ var idiomas = [
       projetos_sobre_2:
         "Página sobre un reproductor multimedia, desarrollada para el curso de Grid Layout impartido por mí en Alura. Proyecto responsivo.",
       //projetos card 3
-      projetos_sobre_3: "¡CardSage es una increíble extensión de Chrome que puedes usar! Te permite agregar páginas web a una lista de tarjetas personalizadas, funcionando como una lista de favoritos mejorada. Cada tarjeta muestra un resumen, título y etiquetas del contenido principal de la página, generados con la IA de ChatGPT, lo que facilita la organización y el acceso eficiente a los favoritos. Actualmente, la extensión está disponible solo en portugués.",
+      projetos_sobre_3:
+        "¡CardSage es una increíble extensión de Chrome que puedes usar! Te permite agregar páginas web a una lista de tarjetas personalizadas, funcionando como una lista de favoritos mejorada. Cada tarjeta muestra un resumen, título y etiquetas del contenido principal de la página, generados con la IA de ChatGPT, lo que facilita la organización y el acceso eficiente a los favoritos. Actualmente, la extensión está disponible solo en portugués.",
       //projetos card 4
       projetos_sobre_4:
         "Página web de cafetería desarrollada para la creación de un curso en el que fui instructor sobre Bootstrap 5, JavaScript y efectos visuales con CSS en Alura. Código desarrollado por mí, diseño realizado por el equipo responsable.",
