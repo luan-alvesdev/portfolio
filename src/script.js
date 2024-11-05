@@ -91,7 +91,7 @@ function mudarIdioma(idioma) {
             cv = "https://docs.google.com/document/d/1F-_hs4e0vyYLqBuzuEe747FBt7JaQJLlasSYU6MRZHw/export?format=pdf"
             break;
         case 'ESP':
-            cv = "https://docs.google.com/document/d/1ZrJ9v3K1j0i8Q1k3Z7aZl6vZ2FVZDqP6M9h8yfL1Y2Q/export?format=pdf"
+            cv = "https://docs.google.com/document/d/1FNs-mvCHGt7iZWexm7NXC1nI9ZubrK5rj4-vTNGPPXg/export?format=pdf"
             break;
         default:
             cv = "https://docs.google.com/document/d/17Zhb6VYRw3Hv9nAmQYZMt3Y3iF18BWKq1xKuigYgBzE/export?format=pdf"
