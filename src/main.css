@@ -26,7 +26,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes logo {
+/* @keyframes logo {
   0% {
     stroke-width: 0;
     stroke-dasharray: 1 100;
@@ -42,14 +42,26 @@
     stroke-width: 0.3;
     fill: white;
   }
-}
-@keyframes loop {
+} */
+/* @keyframes loop {
   100% {
     transform: translateX(-100%);
   }
+} */
+
+.project-circle {
+  stroke-width: 0;
+  -webkit-animation: project-btn 8s ease forwards;
+          animation: project-btn 8s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
-@keyframes curriculo-btn {
+.project-text{
+	opacity: 0;
+}
+
+@-webkit-keyframes project-btn {
   0% {
     stroke-width: 0;
     stroke-dasharray: 1 100;
@@ -58,12 +70,24 @@
     stroke-width: 4;
     stroke-dasharray: 100 0;
   }
-  60%,
-  100% {
+  60%, 100% {
     stroke-width: 4;
   }
 }
 
+@keyframes project-btn {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+  }
+  25% {
+    stroke-width: 4;
+    stroke-dasharray: 100 0;
+  }
+  60%, 100% {
+    stroke-width: 4;
+  }
+}
 button {
   border: 0;
   cursor: pointer;
@@ -242,7 +266,7 @@ header
 }
 
 .header-logo {
-  margin-top: 6px;
+  margin-top: 3px;
   margin-left: 10px;
   width: 4rem;
   border-radius: 8px;

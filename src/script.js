@@ -74,11 +74,11 @@ let cv = "https://docs.google.com/document/d/17Zhb6VYRw3Hv9nAmQYZMt3Y3iF18BWKq1x
 // URL do Google Docs modificada para baixar como PDF
 
 
-btnMobile.addEventListener("click", (event) =>{
-    event.preventDefault()
+// btnMobile.addEventListener("click", (event) =>{
+//     event.preventDefault()
 
-    mobileMenu.classList.toggle("show")
-})
+//     mobileMenu.classList.toggle("show")
+// })
 
 // ---------------------- FIM Animacao Menu ----------------------
 
