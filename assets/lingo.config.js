@@ -5,8 +5,9 @@ var idiomas = [
       menu_sobre: "Sobre",
       menu_projetos: "Projetos",
       menu_contato: "Contato",
-      menu_idioma_ing: "ING",
+      menu_idioma_ing: "Ing",
       //home
+      cargo_titulo: "Desenvolvedor de Software",
       home_descricao:
         "Boas-vindas ao meu portfólio! Sou Luan, desenvolvedor Front-End. Aqui, você encontrará meus projetos pessoais e profissionais, incluindo aqueles desenvolvidos para cursos onde atuei como instrutor. Fique à vontade para explorar e conhecer mais sobre meu trabalho!",
       home_cv: "Baixar CV",
@@ -35,8 +36,9 @@ var idiomas = [
       menu_sobre: "About",
       menu_projetos: "Projects",
       menu_contato: "Contact",
-      menu_idioma_ing: "ENG",
+      menu_idioma_ing: "Eng",
       //home
+      cargo_titulo: "Software Developer",
       home_descricao:
         "Welcome to my portfolio! I'm Luan, a Front-End Developer. Here, you'll find my personal and professional projects, including those created for courses where I worked as an instructor. Feel free to explore and learn more about my work!",
       home_cv: "Download CV",
@@ -65,8 +67,9 @@ var idiomas = [
       menu_sobre: "Sobre",
       menu_projetos: "Proyectos",
       menu_contato: "Contacto",
-      menu_idioma_ing: "ING",
+      menu_idioma_ing: "Ing",
       //home
+      cargo_titulo: "Desarrollador de Software",
       home_descricao:
         "¡Bienvenidos a mi portafolio! Soy Luan, desarrollador Front-End. Aquí encontrarás mis proyectos personales y profesionales, incluyendo aquellos creados para cursos donde trabajé como instructor. ¡Siéntete libre de explorar y conocer más sobre mi trabajo!",
       home_cv: "Descargar CV",

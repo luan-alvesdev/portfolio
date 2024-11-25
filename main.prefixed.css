@@ -66,13 +66,13 @@
 .project-circle {
   stroke-width: 0;
   -webkit-animation: project-btn 8s ease forwards;
-          animation: project-btn 8s ease forwards;
+  animation: project-btn 8s ease forwards;
   -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 
-.project-text{
-	opacity: 0;
+.project-text {
+  opacity: 0;
 }
 
 @-webkit-keyframes project-btn {
@@ -84,7 +84,8 @@
     stroke-width: 4;
     stroke-dasharray: 100 0;
   }
-  60%, 100% {
+  60%,
+  100% {
     stroke-width: 4;
   }
 }
@@ -98,7 +99,8 @@
     stroke-width: 4;
     stroke-dasharray: 100 0;
   }
-  60%, 100% {
+  60%,
+  100% {
     stroke-width: 4;
   }
 }
@@ -350,7 +352,7 @@ header
   margin-right: -7rem;
 }
 .home-area .container .about-info p {
-  margin-top: 5rem;
+  margin-top: 3rem;
   max-width: 40rem;
   color: #ffffff;
   color: var(--text-color2);
@@ -902,4 +904,3 @@ footer .container .btn-scroll h4 {
     display: none;
   }
 }
-
