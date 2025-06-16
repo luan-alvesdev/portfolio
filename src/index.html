@@ -1,402 +1,321 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/imgs/logo-luan.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
-    />
-    <!-- <link rel="stylesheet" href="./main.css" /> -->
-    <link rel="stylesheet" href="./main.min.css" />
-    <script src="/assets/lingo.config.js"></script>
-    <script src="/assets/lingo.js"></script>
-    <title>Luan Alves - Portfólio</title>
-  </head>
-  <body>
-    <header>
-      <!-- Navigation -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <!-- Botão de alternância e logotipo -->
-          <div class="navbar-header">
-            <button
-              type="button"
-              class="navbar-toggle"
-              data-toggle="collapse"
-              data-target="#navbarResponsive"
-            >
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#page-top"
-              ><img
-                src="/imgs/logo-luan.jpg"
-                alt="Logo do portfólio de Luan Alves"
-                class="header-logo"
-            /></a>
-          </div>
-          <!-- Links de navegação -->
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about" class="navbar-collapse-menu">Home</a></li>
-              <li>
-                <a
-                  href="#projects"
-                  class="navbar-collapse-menu"
-                  data-id="menu_projetos"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="navbar-collapse-menu"
-                  data-id="menu_contato"
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/luanalvesdev/"
-                  class="navbar-collapse-menu"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/luan-alvesdev"
-                  class="navbar-collapse-menu"
-                  >GitHub</a
-                >
-              </li>
-              <li>
-                <div id="languageOptions">
-                  <div class="customRadioHolder">
-                    <input
-                      class="customRadioInput navbar-collapse-menu"
-                      id="cCB1"
-                      type="radio"
-                      name="language"
-                      checked
-                    />
-                    <label
-                      class="customRadioWrapper"
-                      for="cCB1"
-                      onclick="mudarIdioma('PTBR')"
-                    >
-                      <div class="customRadio">
-                        <img
-                          src="/imgs/br.svg"
-                          alt="Ícone bandeira do Brasil"
-                        />
-                        <div class="inner">Pt</div>
-                      </div>
-                    </label>
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="icon" type="image/x-icon" href="/imgs/logo-luan.jpg" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+          <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+          <!-- <link rel="stylesheet" href="./main.css" /> -->
+          <link rel="stylesheet" href="./main.css" />
+          <script src="/assets/lingo.config.js"></script>
+          <script src="/assets/lingo.js"></script>
+          <title>Luan Alves - Portfólio</title>
+     </head>
+     <body>
+          <header>
+               <!-- Navigation -->
+               <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                         <!-- Botão de alternância e logotipo -->
+                         <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarResponsive">
+                                   <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span>
+                                   <span class="icon-bar"></span>
+                              </button>
+                              <a href="#page-top"
+                                   ><img src="/imgs/logo-luan.jpg" alt="Logo do portfólio de Luan Alves" class="header-logo"
+                              /></a>
+                         </div>
+                         <!-- Links de navegação -->
+                         <div class="collapse navbar-collapse" id="navbarResponsive">
+                              <ul class="nav navbar-nav navbar-right">
+                                   <li><a href="#about" class="navbar-collapse-menu">Home</a></li>
+                                   <li>
+                                        <a href="#projects" class="navbar-collapse-menu" data-id="menu_projetos"></a>
+                                   </li>
+                                   <li>
+                                        <a href="#contact" class="navbar-collapse-menu" data-id="menu_contato"></a>
+                                   </li>
+                                   <li>
+                                        <a href="https://www.linkedin.com/in/luanalvesdev/" class="navbar-collapse-menu">LinkedIn</a>
+                                   </li>
+                                   <li>
+                                        <a href="https://github.com/luan-alvesdev" class="navbar-collapse-menu">GitHub</a>
+                                   </li>
+                                   <li>
+                                        <div id="languageOptions">
+                                             <div class="customRadioHolder">
+                                                  <input
+                                                       class="customRadioInput navbar-collapse-menu"
+                                                       id="cCB1"
+                                                       type="radio"
+                                                       name="language"
+                                                       checked
+                                                  />
+                                                  <label class="customRadioWrapper" for="cCB1" onclick="mudarIdioma('PTBR')">
+                                                       <div class="customRadio">
+                                                            <img src="/imgs/br.svg" alt="Ícone bandeira do Brasil" />
+                                                            <div class="inner">Pt</div>
+                                                       </div>
+                                                  </label>
 
-                    <input
-                      class="customRadioInput navbar-collapse-menu"
-                      id="cCB2"
-                      type="radio"
-                      name="language"
-                    />
-                    <label
-                      class="customRadioWrapper"
-                      for="cCB2"
-                      onclick="mudarIdioma('ENG')"
-                    >
-                      <div class="customRadio">
-                        <img
-                          src="/imgs/us.svg"
-                          alt="Ícone bandeira dos Estados Unidos"
-                        />
-                        <div class="inner" data-id="menu_idioma_ing"></div>
-                      </div>
-                    </label>
+                                                  <input
+                                                       class="customRadioInput navbar-collapse-menu"
+                                                       id="cCB2"
+                                                       type="radio"
+                                                       name="language"
+                                                  />
+                                                  <label class="customRadioWrapper" for="cCB2" onclick="mudarIdioma('ENG')">
+                                                       <div class="customRadio">
+                                                            <img src="/imgs/us.svg" alt="Ícone bandeira dos Estados Unidos" />
+                                                            <div class="inner" data-id="menu_idioma_ing"></div>
+                                                       </div>
+                                                  </label>
 
-                    <input
-                      class="customRadioInput navbar-collapse-menu"
-                      id="cCB3"
-                      type="radio"
-                      name="language"
-                    />
-                    <label
-                      class="customRadioWrapper"
-                      for="cCB3"
-                      onclick="mudarIdioma('ESP')"
-                    >
-                      <div class="customRadio">
-                        <img
-                          src="/imgs/es.svg"
-                          alt="Ícone bandeira da Espanha"
-                        />
-                        <div class="inner">Esp</div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+                                                  <input
+                                                       class="customRadioInput navbar-collapse-menu"
+                                                       id="cCB3"
+                                                       type="radio"
+                                                       name="language"
+                                                  />
+                                                  <label class="customRadioWrapper" for="cCB3" onclick="mudarIdioma('ESP')">
+                                                       <div class="customRadio">
+                                                            <img src="/imgs/es.svg" alt="Ícone bandeira da Espanha" />
+                                                            <div class="inner">Esp</div>
+                                                       </div>
+                                                  </label>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+               </nav>
+          </header>
 
-    <section class="home-area" id="about">
-      <div class="container">
-        <div class="about-info">
-          <h2 class="info-title">Luan Alves</h2>
-          <h3 class="info-title" data-id="cargo_titulo"></h3>
-          <p class="info-p" data-id="home_descricao"></p>
-          <a href="#" class="info-btn" onclick="downloadFile()">
-            <svg
-              width="105"
-              height="105"
-              viewBox="0 0 105 105"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                class="project-circle"
-                cx="52.5"
-                cy="52.5"
-                r="49.5"
-                stroke="url(#paint0_linear_364_4)"
-                stroke-width="6"
-              />
-              <text
-                x="50%"
-                y="55%"
-                text-anchor="middle"
-                font-size="16"
-                fill="#fff"
-                data-id="home_cv"
-              ></text>
-              <defs>
-                <linearGradient
-                  id="paint0_linear_364_4"
-                  x1="-1.75"
-                  y1="52.5"
-                  x2="99"
-                  y2="52.5"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#247D7D" />
-                  <stop offset="1" stop-color="#12ABCD" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </a>
-        </div>
-        <div id="logo-container">
-          <img
-            id="logo-sobre"
-            src="/imgs/logo2.jpg"
-            class="logo-container-img"
-            alt="Foto de Luan Alves vestindo camisa azul de manga comprida."
-          />
-        </div>
-      </div>
-    </section>
+          <section class="home-area" id="about">
+               <div class="container">
+                    <div class="about-info">
+                         <h2 class="info-title">Luan Alves</h2>
+                         <h3 class="info-title" data-id="cargo_titulo"></h3>
+                         <p class="info-p" data-id="home_descricao"></p>
+                         <a href="#" class="info-btn" onclick="downloadFile()">
+                              <svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <circle
+                                        class="project-circle"
+                                        cx="52.5"
+                                        cy="52.5"
+                                        r="49.5"
+                                        stroke="url(#paint0_linear_364_4)"
+                                        stroke-width="6"
+                                   />
+                                   <text x="50%" y="55%" text-anchor="middle" font-size="16" fill="#fff" data-id="home_cv"></text>
+                                   <defs>
+                                        <linearGradient
+                                             id="paint0_linear_364_4"
+                                             x1="-1.75"
+                                             y1="52.5"
+                                             x2="99"
+                                             y2="52.5"
+                                             gradientUnits="userSpaceOnUse"
+                                        >
+                                             <stop stop-color="#247D7D" />
+                                             <stop offset="1" stop-color="#12ABCD" />
+                                        </linearGradient>
+                                   </defs>
+                              </svg>
+                         </a>
+                    </div>
+                    <div id="logo-container">
+                         <img
+                              id="logo-sobre"
+                              src="/imgs/logo2.jpg"
+                              class="logo-container-img"
+                              alt="Foto de Luan Alves vestindo camisa azul de manga comprida."
+                         />
+                    </div>
+               </div>
+          </section>
 
-    <section class="projects" id="projects">
-      <h2 data-aos="fade-up" data-id="projetos_titulo"></h2>
-      <div class="container">
-        <!-- ---------------------------------------- CARD DE PROJETO 01 ---------------------------------------- -->
-        <div class="project-card">
-          <div class="card" data-aos="flip-left">
-            <div class="project-info" data-aos="fade-up" data-aos-delay="200">
-              <div class="video-wrapper">
-                <img
-                  src="/imgs/gifs/aquarium.gif"
-                  alt="Gif da aplicação Aquarium. Contêm desenhos de peixes sendo inseridos na tela e nadando no fundo do oceano."
-                />
-              </div>
-              <div class="info">
-                <h3>Aquarium</h3>
-                <div class="techs techs-left">
-                  <h4 data-id="projetos_titulo"></h4>
-                  <h4>Vue - TypeScript - CSS Animations</h4>
-                </div>
-                <p data-id="projetos_sobre_1"></p>
-              </div>
-              <div class="buttons">
-                <a
-                  href="https://aquarium.luancode.dev/"
-                  target="_blank"
-                  data-id="projetos_site"
-                ></a>
-                <a
-                  href="https://github.com/luan-alvesdev/virtual-aquarium"
-                  class="btn2"
-                  target="_blank"
-                  data-id="projetos_codigo"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ---------------------------------------- CARD DE PROJETO 02 ---------------------------------------- -->
-        <div class="project-card side">
-          <div class="card" data-aos="flip-left">
-            <div class="project-info" data-aos="fade-up" data-aos-delay="200">
-              <div class="video-wrapper">
-                <img
-                  src="/imgs/gifs/wavecast.gif"
-                  alt="Gif mostrando o projeto Wave Cast. Projeto sobre reprodução de músicas e diversos outros conteúdos em áudio."
-                />
-              </div>
-              <div class="info">
-                <h3>WaveCast</h3>
-                <div class="techs techs-right">
-                  <h5 data-id="projetos_titulo"></h5>
-                  <h5>JavaScript - Bootstrap - CSS</h5>
-                </div>
-                <p data-id="projetos_sobre_2"></p>
-              </div>
-              <div class="buttons">
-                <a
-                  href="https://wavecast.luancode.dev/"
-                  target="_blank"
-                  data-id="projetos_site"
-                ></a>
-                <a
-                  href="https://github.com/luan-alvesdev/WaveCast/tree/projeto-final"
-                  class="btn2"
-                  target="_blank"
-                  data-id="projetos_codigo"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <section class="projects" id="projects">
+               <h2 data-aos="fade-up" data-id="projetos_titulo"></h2>
+               <div class="container">
+                    <!-- ---------------------------------------- CARD DE PROJETO 01 ---------------------------------------- -->
+                    <div class="project-card">
+                         <div class="card" data-aos="flip-left">
+                              <div class="project-info" data-aos="fade-up" data-aos-delay="200">
+                                   <div class="video-wrapper">
+                                        <img
+                                             src="/imgs/gifs/aquarium.gif"
+                                             alt="Gif da aplicação Aquarium. Contêm desenhos de peixes sendo inseridos na tela e nadando no fundo do oceano."
+                                        />
+                                   </div>
+                                   <div class="info">
+                                        <h3>Aquarium</h3>
+                                        <div class="techs techs-left">
+                                             <h4 data-id="projetos_titulo"></h4>
+                                             <h4>Vue - TypeScript - CSS Animations</h4>
+                                        </div>
+                                        <p data-id="projetos_sobre_1"></p>
+                                   </div>
+                                   <div class="buttons">
+                                        <a href="https://aquarium.luancode.online/" target="_blank" data-id="projetos_site"></a>
+                                        <a
+                                             href="https://github.com/luan-alvesdev/virtual-aquarium"
+                                             class="btn2"
+                                             target="_blank"
+                                             data-id="projetos_codigo"
+                                        ></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- ---------------------------------------- CARD DE PROJETO 02 ---------------------------------------- -->
+                    <div class="project-card side">
+                         <div class="card" data-aos="flip-left">
+                              <div class="project-info" data-aos="fade-up" data-aos-delay="200">
+                                   <div class="video-wrapper">
+                                        <img
+                                             src="/imgs/gifs/wavecast.gif"
+                                             alt="Gif mostrando o projeto Wave Cast. Projeto sobre reprodução de músicas e diversos outros conteúdos em áudio."
+                                        />
+                                   </div>
+                                   <div class="info">
+                                        <h3>WaveCast</h3>
+                                        <div class="techs techs-right">
+                                             <h5 data-id="projetos_titulo"></h5>
+                                             <h5>JavaScript - Bootstrap - CSS</h5>
+                                        </div>
+                                        <p data-id="projetos_sobre_2"></p>
+                                   </div>
+                                   <div class="buttons">
+                                        <a href="https://wavecast.luancode.online/" target="_blank" data-id="projetos_site"></a>
+                                        <a
+                                             href="https://github.com/luan-alvesdev/WaveCast/tree/projeto-final"
+                                             class="btn2"
+                                             target="_blank"
+                                             data-id="projetos_codigo"
+                                        ></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
 
-        <!-- ---------------------------------------- CARD DE PROJETO 03 ---------------------------------------- -->
-        <div class="project-card">
-          <div class="card" data-aos="flip-left">
-            <div class="project-info" data-aos="fade-up" data-aos-delay="200">
-              <div class="video-wrapper">
-                <img
-                  src="/imgs/gifs/cardsage.gif"
-                  alt="Gif da extensão CardSage. Mostrando uma página sendo adicionada a lista de favoritos da extensão."
-                />
-              </div>
-              <div class="info">
-                <h3>CardSage</h3>
-                <div class="techs techs-left">
-                  <h4 data-id="projetos_titulo"></h4>
-                  <h4>React - Yup - Material UI</h4>
-                </div>
-                <p data-id="projetos_sobre_3"></p>
-              </div>
-              <div class="buttons">
-                <a
-                  href="https://chromewebstore.google.com/detail/cardsage/eogoblegiobdnfdcikffkdepdgcepkmf"
-                  target="_blank"
-                  data-id="projetos_site"
-                ></a>
-                <a
-                  href="https://github.com/luan-alvesdev/cardsage"
-                  class="btn2"
-                  target="_blank"
-                  data-id="projetos_codigo"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
+                    <!-- ---------------------------------------- CARD DE PROJETO 03 ---------------------------------------- -->
+                    <div class="project-card">
+                         <div class="card" data-aos="flip-left">
+                              <div class="project-info" data-aos="fade-up" data-aos-delay="200">
+                                   <div class="video-wrapper">
+                                        <img
+                                             src="/imgs/gifs/cardsage.gif"
+                                             alt="Gif da extensão CardSage. Mostrando uma página sendo adicionada a lista de favoritos da extensão."
+                                        />
+                                   </div>
+                                   <div class="info">
+                                        <h3>CardSage</h3>
+                                        <div class="techs techs-left">
+                                             <h4 data-id="projetos_titulo"></h4>
+                                             <h4>React - Yup - Material UI</h4>
+                                        </div>
+                                        <p data-id="projetos_sobre_3"></p>
+                                   </div>
+                                   <div class="buttons">
+                                        <a
+                                             href="https://chromewebstore.google.com/detail/cardsage/eogoblegiobdnfdcikffkdepdgcepkmf"
+                                             target="_blank"
+                                             data-id="projetos_site"
+                                        ></a>
+                                        <a
+                                             href="https://github.com/luan-alvesdev/cardsage"
+                                             class="btn2"
+                                             target="_blank"
+                                             data-id="projetos_codigo"
+                                        ></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
 
-        <!-- ---------------------------------------- CARD DE PROJETO 04 ---------------------------------------- -->
+                    <!-- ---------------------------------------- CARD DE PROJETO 04 ---------------------------------------- -->
 
-        <div class="project-card side">
-          <div class="card" data-aos="flip-left">
-            <div class="project-info" data-aos="fade-up" data-aos-delay="200">
-              <div class="video-wrapper">
-                <img
-                  src="/imgs/gifs/serenatto.gif"
-                  alt="Gif do projeto Serenatto. Mostrando produtos e serviços da cafeteria."
-                />
-              </div>
-              <div class="info">
-                <h3>Serenatto</h3>
-                <div class="techs techs-right">
-                  <h5 data-id="projetos_titulo"></h5>
-                  <h5 class="projetos_titulo_tecnologias">
-                    JavaScript - Bootstrap - CSS
-                  </h5>
-                </div>
-                <p data-id="projetos_sobre_4"></p>
-              </div>
-              <div class="buttons">
-                <a
-                  href="https://serenatto.luancode.dev/"
-                  target="_blank"
-                  data-id="projetos_site"
-                ></a>
-                <a
-                  href="https://github.com/luan-alvesdev/serenatto"
-                  class="btn2"
-                  target="_blank"
-                  data-id="projetos_codigo"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <div class="project-card side">
+                         <div class="card" data-aos="flip-left">
+                              <div class="project-info" data-aos="fade-up" data-aos-delay="200">
+                                   <div class="video-wrapper">
+                                        <img
+                                             src="/imgs/gifs/serenatto.gif"
+                                             alt="Gif do projeto Serenatto. Mostrando produtos e serviços da cafeteria."
+                                        />
+                                   </div>
+                                   <div class="info">
+                                        <h3>Serenatto</h3>
+                                        <div class="techs techs-right">
+                                             <h5 data-id="projetos_titulo"></h5>
+                                             <h5 class="projetos_titulo_tecnologias">JavaScript - Bootstrap - CSS</h5>
+                                        </div>
+                                        <p data-id="projetos_sobre_4"></p>
+                                   </div>
+                                   <div class="buttons">
+                                        <a href="https://serenatto.luancode.online/" target="_blank" data-id="projetos_site"></a>
+                                        <a
+                                             href="https://github.com/luan-alvesdev/serenatto"
+                                             class="btn2"
+                                             target="_blank"
+                                             data-id="projetos_codigo"
+                                        ></a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
 
-    <section class="contact" id="contact">
-      <div class="container" data-aos="fade-right" data-aos-delay="200">
-        <h2>Entre em contato</h2>
-        <a href="mailto:lluan.alves1@gmail.com">
-          <h3>lluan.alves1@gmail.com</h3>
-        </a>
-      </div>
-    </section>
+          <section class="contact" id="contact">
+               <div class="container" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Entre em contato</h2>
+                    <a href="mailto:lluan.alves1@gmail.com">
+                         <h3>lluan.alves1@gmail.com</h3>
+                    </a>
+               </div>
+          </section>
 
-    <footer>
-      <div class="container">
-        <div class="btn-scroll">
-          <img src="/imgs/arrow.svg" alt="" />
-          <h4>Voltar ao topo</h4>
-        </div>
-      </div>
-    </footer>
+          <footer>
+               <div class="container">
+                    <div class="btn-scroll">
+                         <img src="/imgs/arrow.svg" alt="" />
+                         <h4>Voltar ao topo</h4>
+                    </div>
+               </div>
+          </footer>
 
-    <!-- JavaScript do Bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-        duration: 1000,
-      });
-    </script>
-    <!-- <script src="script.js"></scrip  t> -->
-    <script src="script.min.js"></script>
-    <script>
-      initInternacionalizacao("PTBR");
-      atualizarTraducao();
-    </script>
-  </body>
+          <!-- JavaScript do Bootstrap -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+          <script
+               src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+               integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          ></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+               AOS.init({
+                    once: true,
+                    duration: 1000,
+               });
+          </script>
+          <!-- <script src="script.js"></scrip  t> -->
+          <script src="script.min.js"></script>
+          <script>
+               initInternacionalizacao("PTBR");
+               atualizarTraducao();
+          </script>
+     </body>
 </html>
