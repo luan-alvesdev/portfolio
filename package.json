@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "postcss": "postcss src/main.css -o main.prefixed.css",
-    "minify:css": "cleancss -o main.min.css main.prefixed.css && rm main.prefixed.css",
-    "minify:html": "html-minifier src/index.html -o index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
-    "minify:js": "terser src/script.js -o script.min.js -c -m",
-    "build": "npm run postcss && npm run minify:css && npm run minify:html && npm run minify:js"
-  },
+  "postcss": "postcss src/main.css -o public/main.min.css",
+  "minify:css": "cleancss -o public/main.min.css public/main.min.css",
+  "minify:html": "html-minifier src/index.html -o public/index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
+  "minify:js": "terser src/script.js -o public/script.min.js -c -m",
+  "build": "npm run postcss && npm run minify:css && npm run minify:html && npm run minify:js"
+},
   "author": "Luan Alves",
   "license": "ISC",
   "description": "",
